@@ -17,7 +17,9 @@ Builder - порождающий паттерн, значительно упро
 
 Пример использования паттерна Builder для создания рассылок с HTML кодом. При этом письма должны иметь нормальную разметку и вёрстку, красиво смотреться как в браузере, так и мобильном приложении. В связи с этим сейчас часто используют специальные шаблоны для рассылок, содержащие HTML-разметку, прямо как обычные веб-страницы.
 Чтобы генерировать письмо на основании шаблона с разметкой, часто пользуются шаблонизаторами, причем они должны работать сразу с несколькими шаблонами под разные типы писем.
+
 [Пример паттерна Builder 2](https://github.com/SkillfactoryCoding/PatternsModule_2/tree/main/BuilderRealExample)
+
 [Пример паттерна Builder 3](https://github.com/SkillFactory-CSARP/PatternsModule_2/tree/main/BuilderTask)
 
 ### ПРОТОТИП (PROTOTYPE)
@@ -29,6 +31,7 @@ Prototype - этот паттерн позволяет копировать уж
 - Если клонирование объекта для нас предпочтительнее, чем его создание и инициализация в конструкторе. Особенно удобно, когда мы знаем, что объект способен принимать небольшое ограниченное количество возможных состояний.
 
 [Пример реализации паттерна Prototype 1](https://github.com/SkillfactoryCoding/PatternsModule_2/tree/main/PrototypeExample)
+
 [Пример реализации паттерна Prototype 2](https://github.com/SkillfactoryCoding/PatternsModule_2/tree/main/PrototypeRealExample)
 
 ## Другие популярные поведенческие паттерны
@@ -62,6 +65,7 @@ Command - этот поведенческий паттерн позволяет 
  - Класс, в котором определен функционал, не должен ничего знать о реализации.
 
 [Пример реализации паттерна Strategy 1](https://github.com/SkillfactoryCoding/PatternsModule_2/tree/main/StrategyExample)
+
 [Пример реализации паттерна Strategy 2](https://github.com/SkillfactoryCoding/PatternsModule_2/tree/main/StrategyRealExample)
 
 
