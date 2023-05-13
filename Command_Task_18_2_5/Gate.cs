@@ -1,0 +1,17 @@
+﻿using System;
+namespace Command_Task_18_2_5
+{
+	public class Gate
+	{
+        public void Open()
+        {
+            Console.WriteLine("Открываем ворота");
+        }
+
+        public void Close()
+        {
+            Console.WriteLine("Закрываем ворота");
+        }   
+    }
+}
+
