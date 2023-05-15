@@ -15,12 +15,10 @@ while (true)
 static void Start()
 {
     Console.Write("Введите URL адрес Youtube видео: ");
-    string url = Console.ReadLine();
+    string? url = Console.ReadLine();
 
-    if (url != string.Empty)
-    {
+    if (url != null)
         Menu(url);
-    }
     else
         Restart();
 }
@@ -28,7 +26,7 @@ static void Start()
 /// <summary>
 /// Отрисовка меню
 /// </summary>
-static void Menu(string url)
+static async void Menu(string url)
 {
     Console.WriteLine();
     Console.WriteLine("Выберите пункт меню (введите 1,2 или 3):");
@@ -44,7 +42,7 @@ static void Menu(string url)
 
         if (menuValue.KeyChar == '1' || menuValue.KeyChar == '2')
         {
-            GetToolsAsync(menuValue.KeyChar, url);
+            await GetToolsAsync(menuValue.KeyChar, url);
             break;
         }
         else if (menuValue.KeyChar == '3')
